@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+</head>
+<body>
+    <h1 align="center">UPDATE FORM</h1>
+
+    <center>
+        <form action="/edit/<%= student.id %>" method="POST" enctype="multipart/form-data">
+            
+            <div class="one">
+                <label>STUDENT_ID</label>
+                <input type="number" name="id" value="<%= student.id %>" readonly>
+            </div>
+            <br>
+
+            <div class="one">
+                <label>STUDENT_NAME</label>
+                <input type="text" name="name" value="<%= student.name %>" required>
+            </div>
+            <br>
+
+            <div class="one">
+                <label>STUDENT_Photo</label>
+                <!-- Show Old Image -->
+                <img src="<%= student.photo %>" width="80"><br><br>
+
+                <!-- Browse New Image -->
+                <input type="file" name="photo">
+            </div>
+            <br>
+
+            <div class="one">
+                <button type="submit">Update</button>
+            </div>
+        </form>
+    </center>
+</body>
+</html>

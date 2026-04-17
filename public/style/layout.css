@@ -1,0 +1,48 @@
+
+a{
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(10, 10, 104);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+body {
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+
+    /* Soft professional gradient + image */
+    background: 
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.9)),
+        url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d') no-repeat center center/cover;
+
+    min-height: 100vh;
+}
+
+
+a:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Professional Card */
+.card-pro {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card-pro:hover {
+    transform: translateY(-5px);
+}
+
+.card {
+    border-radius: 10px;
+}
+
+input:focus {
+    box-shadow: none !important;
+    border-color: #0d6efd;
+}
